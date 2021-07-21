@@ -1,0 +1,8 @@
+file=open("student.txt","w")
+rn=int(input("Enter the Student roll number :"))
+name=input("Enter student name  : ")
+add=input("Enter the student address :")
+cont=int(input("Enter student contact number :"))
+file.write("Student Roll Number is :"+str(rn)+"\n"+"Student name is :"+name+"\n"+"Student Address is :"+add+"\n"+"Student contact number is :"+str(cont))
+file.close()
+print("record save")

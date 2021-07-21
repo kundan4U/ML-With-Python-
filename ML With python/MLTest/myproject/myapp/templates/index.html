@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title> Uber ride</title>
+    <style>
+body {
+  background-image: url('ajpg');
+}
+</style>
+
+</head>
+<body >
+<h1 style="color:green;">
+    Uber Ride MOdel Testing </h1>
+{% if res %}
+<h2>Predicted no of riders={{res}}</h2>
+{% endif %}
+<form action="{% url 'test' %}" methode="post">
+    {% csrf_token %}
+    Enter price per week
+    <input type="number" name="PPW" required/> <br/><br/>
+    Enter POpulation
+    <input type="number" name="PN" required/> <br/><br/>
+    Enter Monthely Income
+    <input type="number" name="MI" required/> <br/><br/>
+    Enter AverageParkingPerMonth
+    <input type="number" name="APPM" required/> <br/><br/>
+    <input type="submit" value="predict"/>
+
+</form>
+</body>
+</html>

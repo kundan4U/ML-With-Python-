@@ -1,0 +1,19 @@
+a=int(input("Plese enter any number "))
+y=int(a/365)
+w=int((a%365)/7)
+d=(a%365)%7
+print("No of year is :",y,"year")
+print("No of week is :",w,"week")
+print("No of day is  :",d,"Day")
+
+
+output :
+
+
+F:\lucknow>python asmt3.py
+Plese enter any number 678
+No of year is : 1 year
+No of week is : 44 week
+No of day is  : 5 Day
+
+F:\lucknow>
